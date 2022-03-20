@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CapStone</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+	<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+</head>
+<body>
+
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+    	<img src="images/logo.png" id="logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">MEN</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">WOMEN</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">KIDS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">HOME & LIVING</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">BEAUTY</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">STUDIO</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+      <ul class="nav_items">
+       <li class="nav-item">
+          <a class="nav-link" href="#">PROFILE</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">WISHLIST</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">BAG</a>
+        </li>
+        </ul>
+    </div>
+  </div>
+</nav>
+<h2 class="title" id="all_products">Zoom In</h2>
+
+<header>
+<div class="img-zoom-container zoom-img">
+  <img id="myimage" src="images/shirt13.jpg" width="300" height="300" alt="Girl">
+  <div id="myresult" class="img-zoom-result"></div>
+</div>
+</header>
+
+<div class="last_btn">
+	<div class="row">
+	<a href="C:\Users\Prahlad Pallav\Desktop\Cap\productdetails.htmls">
+<button type="button" class="btn btn-danger">Back -></button>
+</a>
+</div>
+</div>
+
+
+<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="footer-col-1">
+					<h3>Download Our App</h3>
+					<p> Download App for Andriod and ios mobile phone</p>
+					<div class="app-logo">
+						<a href="https://play.google.com/store/apps/details?id=com.myntra.android&hl=en_IN&gl=US">
+						<img src="images/play-store.png">
+						</a>
+						<a href="https://apps.apple.com/in/app/myntra-fashion-shopping-app/id907394059">
+						<img src="images/app-store.png">
+						</a>
+					</div>
+				</div>
+				<div class="footer-col-2">
+					<img src="images/logo.png">
+					<!-- <p> Our Purpose</p> -->
+				</div>
+				<div class="footer-col-3">
+					<h3> Useful Links</h3>
+					<ul>
+						<li>Coupons</li>
+						<li>Blog Post</li>
+						<li>Return Policy</li>
+						<li>Join  Affiliate</li>
+					</ul>
+				</div>
+				<div class="footer-col-4">
+					<h3>Follow Us</h3>
+					<ul>
+						<li>Facebook</li>
+						<li>Twitter</li>
+						<li>Instagram</li>
+						<li>Youtube</li>
+					</ul>
+				</div>
+			</div>
+				<hr>
+				<p class="copy-right">Copyright-2022</p>
+			</div>
+		
+		</div>
+</div>
+
+<script type="text/javascript">
+function imageZoom(imgID, resultID) {
+  var img, lens, result, cx, cy;
+  img = document.getElementById(imgID);
+  result = document.getElementById(resultID);
+  /* Create lens: */
+  lens = document.createElement("DIV");
+  lens.setAttribute("class", "img-zoom-lens");
+  /* Insert lens: */
+  img.parentElement.insertBefore(lens, img);
+  /* Calculate the ratio between result DIV and lens: */
+  cx = result.offsetWidth / lens.offsetWidth;
+  cy = result.offsetHeight / lens.offsetHeight;
+  /* Set background properties for the result DIV */
+  result.style.backgroundImage = "url('" + img.src + "')";
+  result.style.backgroundSize = (img.width * cx) + "px " + (img.height * cy) + "px";
+  /* Execute a function when someone moves the cursor over the image, or the lens: */
+  lens.addEventListener("mousemove", moveLens);
+  img.addEventListener("mousemove", moveLens);
+  /* And also for touch screens: */
+  lens.addEventListener("touchmove", moveLens);
+  img.addEventListener("touchmove", moveLens);
+  function moveLens(e) {
+    var pos, x, y;
+    /* Prevent any other actions that may occur when moving over the image */
+    e.preventDefault();
+    /* Get the cursor's x and y positions: */
+    pos = getCursorPos(e);
+    /* Calculate the position of the lens: */
+    x = pos.x - (lens.offsetWidth / 2);
+    y = pos.y - (lens.offsetHeight / 2);
+    /* Prevent the lens from being positioned outside the image: */
+    if (x > img.width - lens.offsetWidth) {x = img.width - lens.offsetWidth;}
+    if (x < 0) {x = 0;}
+    if (y > img.height - lens.offsetHeight) {y = img.height - lens.offsetHeight;}
+    if (y < 0) {y = 0;}
+    /* Set the position of the lens: */
+    lens.style.left = x + "px";
+    lens.style.top = y + "px";
+    /* Display what the lens "sees": */
+    result.style.backgroundPosition = "-" + (x * cx) + "px -" + (y * cy) + "px";
+  }
+  function getCursorPos(e) {
+    var a, x = 0, y = 0;
+    e = e || window.event;
+    /* Get the x and y positions of the image: */
+    a = img.getBoundingClientRect();
+    /* Calculate the cursor's x and y coordinates, relative to the image: */
+    x = e.pageX - a.left;
+    y = e.pageY - a.top;
+    /* Consider any page scrolling: */
+    x = x - window.pageXOffset;
+    y = y - window.pageYOffset;
+    return {x : x, y : y};
+  }
+}
+</script>
+
+<script>
+imageZoom("myimage", "myresult");
+</script>
+
+</body>
+</html>

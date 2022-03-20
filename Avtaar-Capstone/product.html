@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>All Products</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+	<!-- CSS only -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+</head>
+<body>
+	<!-- <h1>Captone Project</h1> -->
+
+	<!-- Navigation -->
+	<!-- <div class="container">
+	<div class="navbar">
+		<div class="logo">
+			<img src="images/logo.png" width="125px" alt="logo">
+		</div>
+		<nav>
+			<ul id="MenuItems">
+				<li><a href="">Home</a></li>
+				<li><a href="">Products</a></li>
+				<li><a href="">About</a></li>
+				<li><a href="">Contact</a></li>
+				<li><a href="">Account</a></li>
+			</ul>
+		</nav>
+		<img src="images/cart.png" alt="cart" width="30px" height="30px">
+		<img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+	</div>
+	</div> -->
+
+	<!-- Navigation -->
+
+
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+    	<img src="images/logo.png" id="logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">MEN</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">WOMEN</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">KIDS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">HOME & LIVING</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">BEAUTY</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">STUDIO</a>
+        </li>
+        <!-- <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a> -->
+         <!--  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled">Disabled</a>
+        </li> -->
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+      <ul class="nav_items">
+       <li class="nav-item">
+          <a class="nav-link" href="#">PROFILE</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">WISHLIST</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">BAG</a>
+        </li>
+        </ul>
+    </div>
+  </div>
+</nav>
+
+	
+
+
+<!-- <div class="small-container">
+	<div class="row">
+		<div class="col-4">
+			<img src="images/product-1.jpg">
+			<h4>Red Printed T-shirt</h4>
+			<div class="rating">
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star-o"></i>
+			</div>
+			<p>$5.0</p>
+		</div>
+		<div class="col-4">
+			<img src="images/product-2.jpg">
+			<h4>Red Printed T-shirt</h4>
+			<div class="rating">
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star-o"></i>
+			</div>
+			<p>$5.0</p>
+		</div>
+		<div class="col-4">
+			<img src="images/product-3.jpg">
+			<h4>Red Printed T-shirt</h4>
+			<div class="rating">
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star-o"></i>
+			</div>
+			<p>$5.0</p>
+		</div>
+		<div class="col-4">
+			<img src="images/product-4.jpg">
+			<h4>Red Printed T-shirt</h4>
+			<div class="rating">
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star-o"></i>
+			</div>
+			<p>$5.0</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-4">
+			<img src="images/product-5.jpg">
+			<h4>Red Printed T-shirt</h4>
+			<div class="rating">
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star-o"></i>
+			</div>
+			<p>$5.0</p>
+		</div>
+		<div class="col-4">
+			<img src="images/product-6.jpg">
+			<h4>Red Printed T-shirt</h4>
+			<div class="rating">
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star-o"></i>
+			</div>
+			<p>$5.0</p>
+		</div>
+		<div class="col-4">
+			<img src="images/product-7.jpg">
+			<h4>Red Printed T-shirt</h4>
+			<div class="rating">
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star-o"></i>
+			</div>
+			<p>$5.0</p>
+		</div>
+		<div class="col-4">
+			<img src="images/product-8.jpg">
+			<h4>Red Printed T-shirt</h4>
+			<div class="rating">
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star-o"></i>
+			</div>
+			<p>$5.0</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-4">
+			<img src="images/product-9.jpg">
+			<h4>Red Printed T-shirt</h4>
+			<div class="rating">
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star-o"></i>
+			</div>
+			<p>$5.0</p>
+		</div>
+		<div class="col-4">
+			<img src="images/product-10.jpg">
+			<h4>Red Printed T-shirt</h4>
+			<div class="rating">
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star-o"></i>
+			</div>
+			<p>$5.0</p>
+		</div>
+		<div class="col-4">
+			<img src="images/product-11.jpg">
+			<h4>Red Printed T-shirt</h4>
+			<div class="rating">
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star-o"></i>
+			</div>
+			<p>$5.0</p>
+		</div>
+		<div class="col-4">
+			<img src="images/product-12.jpg">
+			<h4>Red Printed T-shirt</h4>
+			<div class="rating">
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star-o"></i>
+			</div>
+			<p>$5.0</p>
+		</div>
+	</div> -->
+
+<div class="container">
+	<h2 class="title" id="all_products">All Products</h2>
+	<div class="small-container">
+		<div class="row row-2">
+			<!-- <h2>All Products</h2> -->
+			<select>
+				<option>Default Shopping</option>
+				<option>Sort by Price </option>
+				<option>Sort by Popularity</option>
+				<option>Sort by Rating</option>
+				<option>Sort by Sale</option>
+			</select>
+		</div>
+	</div>
+      <!-- <div class="row gy-2 mt-5">
+        <div class="col-md-4 col-xxl-4 col-10 mx-auto">
+          <figure>
+            <img src="images/product-1.jpg" class="card-img-top" alt="images">
+          </figure>
+          <div class="card-body">
+    <h5 class="card-title">Roadster</h5>
+    <h4>Men White Pure Cotton T-shirt</h4>
+    <i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+    <p class="card-text">$5.0.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+
+
+
+<div class="col-md-4 col-xxl-4 col-10 mx-auto">
+          <figure>
+            <img src="images/product-1.jpg" class="card-img-top" alt="images">
+          </figure>
+          <div class="card-body">
+    <h5 class="card-title">Roadster</h5>
+    <h4>Men White Pure Cotton T-shirt</h4>
+    <i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+    <p class="card-text">$5.0.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+
+<div class="col-md-4 col-xxl-4 col-10 mx-auto">
+          <figure>
+            <img src="images/product-1.jpg" class="card-img-top" alt="images">
+          </figure>
+          <div class="card-body">
+    <h5 class="card-title">Roadster</h5>
+    <h4>Men White Pure Cotton T-shirt</h4>
+    <i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+    <p class="card-text">$5.0.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+
+<div class="col-md-4 col-xxl-4 col-10 mx-auto">
+          <figure>
+            <img src="images/product-1.jpg" class="card-img-top" alt="images">
+          </figure>
+          <div class="card-body">
+    <h5 class="card-title">Roadster</h5>
+    <h4>Men White Pure Cotton T-shirt</h4>
+    <i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+    <p class="card-text">$5.0.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+
+<div class="col-md-4 col-xxl-4 col-10 mx-auto">
+          <figure>
+            <img src="images/product-1.jpg" class="card-img-top" alt="images">
+          </figure>
+          <div class="card-body">
+    <h5 class="card-title">Roadster</h5>
+    <h4>Men White Pure Cotton T-shirt</h4>
+    <i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+    <p class="card-text">$5.0.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+
+
+<div class="col-md-4 col-xxl-4 col-10 mx-auto">
+          <figure>
+            <img src="images/product-1.jpg" class="card-img-top" alt="images">
+          </figure>
+          <div class="card-body">
+    <h5 class="card-title">Roadster</h5>
+    <h4>Men White Pure Cotton T-shirt</h4>
+    <i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+    <p class="card-text">$5.0.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+
+
+<div class="col-md-4 col-xxl-4 col-10 mx-auto">
+          <figure>
+            <img src="images/product-1.jpg" class="card-img-top" alt="images">
+          </figure>
+          <div class="card-body">
+    <h5 class="card-title">Roadster</h5>
+    <h4>Men White Pure Cotton T-shirt</h4>
+    <i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+    <p class="card-text">$5.0.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+
+
+<div class="col-md-4 col-xxl-4 col-10 mx-auto">
+          <figure>
+            <img src="images/product-1.jpg" class="card-img-top" alt="images">
+          </figure>
+          <div class="card-body">
+    <h5 class="card-title">Roadster</h5>
+    <h4>Men White Pure Cotton T-shirt</h4>
+    <i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+    <p class="card-text">$5.0.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+
+
+<div class="col-md-4 col-xxl-4 col-10 mx-auto">
+          <figure>
+            <img src="images/product-1.jpg" class="card-img-top" alt="images">
+          </figure>
+          <div class="card-body">
+    <h5 class="card-title">Roadster</h5>
+    <h4>Men White Pure Cotton T-shirt</h4>
+    <i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+    <p class="card-text">$5.0.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+
+
+
+</div>
+      </div> -->
+
+<div class="container">
+      <div class="row gy-2 mt-5">
+        <div class="col-md-4 col-xxl-4 col-10 mx-auto">
+          <figure>
+            <img src="images/shirt1.jpg" class="card-img-top" alt="images">
+          </figure>
+          <div class="card-body">
+    <h5 class="card-title">U.S. Polo Assn.</h5>
+    <h4>Men Green White Pure Cotton Printed T-shirt</h4>
+    <i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-half"></i>
+    <p class="card-text">RS 1154.0</p>
+    <a href="#" class="btn btn-outline-warning">Add to Wishlist -></a>
+  </div>
+</div>
+
+
+
+<div class="col-md-4 col-xxl-4 col-10 mx-auto">
+          <figure>
+            <img src="images/shirt2.jpg" class="card-img-top" alt="images">
+          </figure>
+          <div class="card-body">
+    <h5 class="card-title">Roadster</h5>
+    <h4>Men Black Printed Cotton Pure Cotton T-shirt</h4>
+    <i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-half"></i>
+    <p class="card-text">RS 1139.0</p>
+    <a href="#" class="btn btn-outline-warning">Add to Wishlist -></a>
+  </div>
+</div>
+
+<div class="col-md-4 col-xxl-4 col-10 mx-auto">
+          <figure>
+            <img src="images/shirt3.jpg" class="card-img-top" alt="images">
+          </figure>
+          <div class="card-body">
+    <h5 class="card-title">Nautica</h5>
+    <h4>Men Black Solid Polo Collar T-shirt</h4>
+    <i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+    <p class="card-text">Rs. 1689.0</p>
+    <a href="#" class="btn btn-outline-warning">Add to Wishlist -></a>
+  </div>
+</div>
+
+<div class="col-md-4 col-xxl-4 col-10 mx-auto">
+          <figure>
+            <img src="images/shirt4.jpg" class="card-img-top" alt="images">
+          </figure>
+          <div class="card-body">
+    <h5 class="card-title">Roadster</h5>
+    <h4>Men Grey Melange Polo Collar Cotton Pure Cotton T-shirt</h4>
+    <i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+    <p class="card-text">Rs1359.0</p>
+    <a href="#" class="btn btn-outline-warning">Add to Wishlist -></a>
+  </div>
+</div>
+
+<div class="col-md-4 col-xxl-4 col-10 mx-auto">
+          <figure>
+            <img src="images/shirt5.jpg" class="card-img-top" alt="images">
+          </figure>
+          <div class="card-body">
+    <h5 class="card-title">Levis</h5>
+    <h4>Men Black Typography Printed Casual T-shirt</h4>
+    <i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-half"></i>
+    <p class="card-text">Rs 1659.0</p>
+    <a href="#" class="btn btn-outline-warning">Add to Wishlist -></a>
+  </div>
+</div>
+
+
+<div class="col-md-4 col-xxl-4 col-10 mx-auto">
+          <figure>
+            <img src="images/shirt6.jpg" class="card-img-top" alt="images">
+          </figure>
+          <div class="card-body">
+    <h5 class="card-title">DILLINGER</h5>
+    <h4>Men Navy Blue Red Striped Cotton Pure Cotton T-shirt</h4>
+    <i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+    <p class="card-text">Rs 1475.0</p>
+    <a href="#" class="btn btn-outline-warning">Add to Wishlist -></a>
+  </div>
+</div>
+
+
+
+</div>
+      </div>
+
+
+      <div class="container">
+	<!-- <h2 class="title">Featured Product</h2> -->
+      <div class="row gy-2 mt-5">
+        <div class="col-md-4 col-xxl-4 col-10 mx-auto">
+          <figure>
+            <img src="images/shirt7.jpg" class="card-img-top" alt="images">
+          </figure>
+          <div class="card-body">
+    <h5 class="card-title">Nautica</h5>
+    <h4>Men Dark Blue Solid Polo Collar T-shirt</h4>
+    <i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+    <p class="card-text">Rs 1689.0</p>
+    <a href="#" class="btn btn-outline-warning">Add to Wishlist -></a>
+  </div>
+</div>
+
+
+
+<div class="col-md-4 col-xxl-4 col-10 mx-auto">
+          <figure>
+            <img src="images/shirt8.jpg" class="card-img-top" alt="images">
+          </figure>
+          <div class="card-body">
+    <h5 class="card-title">Roadster</h5>
+    <h4>Men Pure White Polo Collar T-shirt</h4>
+    <i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+    <p class="card-text">Rs 1449.0</p>
+    <a href="#" class="btn btn-outline-warning">Add to Wishlist -></a>
+  </div>
+</div>
+
+<div class="col-md-4 col-xxl-4 col-10 mx-auto">
+          <figure>
+            <img src="images/shirt9.jpg" class="card-img-top" alt="images">
+          </figure>
+          <div class="card-body">
+    <h5 class="card-title">U.S. Polo Assn.</h5>
+    <h4> US Polo Collar Applique Slim Fit Pure Cotton T-shirt</h4>
+    <i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-half"></i>
+    <p class="card-text">Rs 1999.0</p>
+    <a href="#" class="btn btn-outline-warning">Add to Wishlist -></a>
+  </div>
+</div>
+
+<div class="col-md-4 col-xxl-4 col-10 mx-auto">
+          <figure>
+            <img src="images/shirt10.jpg" class="card-img-top" alt="images">
+          </figure>
+          <div class="card-body">
+    <h5 class="card-title">Roadster</h5>
+    <h4>Men Beige Colourblocked Raw Edge T-shirt</h4>
+    <i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-half"></i>
+    <p class="card-text">Rs 1279.0</p>
+    <a href="#" class="btn btn-outline-warning">Add to Wishlist -></a>
+  </div>
+</div>
+
+<div class="col-md-4 col-xxl-4 col-10 mx-auto">
+          <figure>
+            <img src="images/shirt11.jpg" class="card-img-top" alt="images">
+          </figure>
+          <div class="card-body">
+    <h5 class="card-title">V Dot</h5>
+    <h4>Men Grey Melange Graphic Printed Pure Cotton T-shirt</h4>
+    <i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+    <p class="card-text">Rs 1599.0</p>
+    <a href="#" class="btn btn-outline-warning">Add to Wishlist -></a>
+  </div>
+</div>
+
+
+<div class="col-md-4 col-xxl-4 col-10 mx-auto">
+          <figure>
+            <img src="images/shirt12.jpg" class="card-img-top" alt="images">
+          </figure>
+          <div class="card-body">
+    <h5 class="card-title">Jack & Jones</h5>
+    <h4>Men Navy Blue Striped Pure Cotton Slim Fit T-shirt</h4>
+    <i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+    <p class="card-text">Rs 2299.0</p>
+    <a href="#" class="btn btn-outline-warning">Add to Wishlist -></a>
+  </div>
+</div>
+
+</div>
+      </div>
+
+
+
+	<div class="page-btn">
+		<span>1</span>
+		<span>2</span>
+		<span>3</span>
+		<span>4</span>
+		<span>&#8594;</span>
+	</div>
+</div>
+
+<!-- Footer -->
+
+<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="footer-col-1">
+					<h3>Download Our App</h3>
+					<p> Download App for Andriod and ios mobile phone</p>
+					<div class="app-logo">
+						<a href="https://play.google.com/store/apps/details?id=com.myntra.android&hl=en_IN&gl=US">
+						<img src="images/play-store.png">
+						</a>
+						<a href="https://apps.apple.com/in/app/myntra-fashion-shopping-app/id907394059">
+						<img src="images/app-store.png">
+						</a>
+					</div>
+				</div>
+				<div class="footer-col-2">
+					<img src="images/logo.png">
+					<!-- <p> Our Purpose</p> -->
+				</div>
+				<div class="footer-col-3">
+					<h3> Useful Links</h3>
+					<ul>
+						<li>Coupons</li>
+						<li>Blog Post</li>
+						<li>Return Policy</li>
+						<li>Join  Affiliate</li>
+					</ul>
+				</div>
+				<div class="footer-col-4">
+					<h3>Follow Us</h3>
+					<ul>
+						<li>Facebook</li>
+						<li>Twitter</li>
+						<li>Instagram</li>
+						<li>Youtube</li>
+					</ul>
+				</div>
+			</div>
+				<hr>
+				<p class="copy-right">Copyright-2022</p>
+			</div>
+		</div>
+</div>			
+
+
+<!-- Js for toggle menu	 -->
+
+<script type="text/javascript">
+	var MenuItems = document.getElementById("MenuItems");
+
+	MenuItems.style.maxHeight = "0px";
+
+	function menutoggle(){
+		if(MenuItems.style.maxHeight == "0px"){
+			MenuItems.style.maxHeight = "200px";
+		}
+		else{
+			MenuItems.style.maxHeight = "0px";
+		}
+	} 
+
+</script>
+</body>
+</html>
